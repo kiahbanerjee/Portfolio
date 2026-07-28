@@ -7,6 +7,7 @@ body {
     font-size: 15px;
 }
 
+
 .nav-home {
     color: #FFBD00 !important;
 }
@@ -92,7 +93,7 @@ a, button, .project-nav a {
 .es-collage .es-col-1 { transform: rotate(-12deg); position: relative; top: -8em;  left: 10%;  width: 120%; z-index: 2; }
 .es-collage .es-col-2 { transform: rotate(13deg);  position: relative; top: 16em;  left: -13%;   width: 120%; z-index: 1; }
 .es-collage .es-col-3 { transform: rotate(0deg);  position: relative; top: 10em;   left: 15%;   width: 160%; }
-.es-collage .es-col-4 { transform: rotate(0deg);   position: relative; top: 48em;   left: -35%;   width: 130%; }
+.es-collage .es-col-4 { transform: rotate(-8deg);   position: relative; top: 42em;   left: -35%;   width: 130%; }
 .es-collage .es-col-5 { transform: rotate(12deg);  position: relative; top: 30em;   left: 10%;   width: 120%; }
 .es-collage .es-col-6 { transform: rotate(-5deg);  position: relative; top: 60em;   left: -60%;   width: 140%; }
 
