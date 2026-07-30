@@ -35,15 +35,45 @@
             </div>
         </div>
 
-        <div class="bos-detail">
-            <div class="bos-detail-block">
-                <p class="bos-detail-label">Detail</p>
-                <p class="bos-detail-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac velit nibh. Donec ipsum augue, tempor eu neque ac, tempor suscipit arcu. Donec tincidunt ultrices justo at blandit.</p>
+        <div class="bos-two-col">
+            <div class="bos-two-col-img">
+                <img src="book of sand.png" alt="Book of Sand">
             </div>
-            <div class="bos-detail-block">
-                <p class="bos-detail-label">Design</p>
-                <p class="bos-detail-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac velit nibh. Donec ipsum augue, tempor eu neque ac, tempor suscipit arcu. Donec tincidunt ultrices justo at blandit.</p>
+            <div class="bos-two-col-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac velit nibh. Donec ipsum augue, tempor eu neque ac, tempor suscipit arcu. Donec tincidunt ultrices justo at blandit. Nam iaculis malesuada risus, id feugiat augue cursus a.</p>
             </div>
+        </div>
+
+        <div class="bos-mindmap">
+            <img src="bosmindmap.png" alt="">
+            <p class="bos-caption">Mindmap for ideation</p>
+        </div>
+
+
+        <div class="bos-centered-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac velit nibh. Donec ipsum augue, tempor eu neque ac, tempor suscipit arcu. Donec tincidunt ultrices justo at blandit. Nam iaculis malesuada risus, id feugiat augue cursus a.</p>
+        </div>
+
+        <div class="bos-carousel">
+            <div class="bos-carousel-wrapper">
+                <div class="bos-carousel-track">
+                    <div class="bos-carousel-slide"><img src="c1.png" alt=""></div>
+                    <div class="bos-carousel-slide"><img src="c2.png" alt=""></div>
+                    <div class="bos-carousel-slide"><img src="c3.png" alt=""></div>
+                </div>
+            </div>
+            <div class="bos-carousel-controls">
+                <button class="bos-prev">&lt;</button>
+                <button class="bos-next">&gt;</button>
+            </div>
+        </div>
+
+        <div class="bos-fullwidth bos-fontbos">
+            <img src="fontbos.png" alt="">
+        </div>
+
+        <div class="bos-centered-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac velit nibh. Donec ipsum augue, tempor eu neque ac, tempor suscipit arcu. Donec tincidunt ultrices justo at blandit. Nam iaculis malesuada risus, id feugiat augue cursus a.</p>
         </div>
 
     </main>
@@ -52,6 +82,21 @@
         <a href="smwsl.html">&lt; back</a>
         <a href="edible streets.html">next &gt;</a>
     </nav>
+
+    <script>
+        const track = document.querySelector('.bos-carousel-track');
+        const slides = document.querySelectorAll('.bos-carousel-slide');
+        const total = slides.length;
+        let current = 0;
+
+        function goTo(n) {
+            current = (n + total) % total;
+            track.style.transform = `translateX(-${current * (100 / total)}%)`;
+        }
+
+        document.querySelector('.bos-prev').addEventListener('click', () => goTo(current - 1));
+        document.querySelector('.bos-next').addEventListener('click', () => goTo(current + 1));
+    </script>
 
     <script>
         document.querySelector('.nav-home').addEventListener('click', () => {
