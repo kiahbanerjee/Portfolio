@@ -226,6 +226,12 @@ body {
     opacity: 0.5;
 }
 
+.project-placeholder {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.08);
+}
+
 .project-desc {
     font-size: 0.85em;
     opacity: 0;
